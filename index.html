@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Hubby</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Cursive&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://png.pngtree.com/png-vector/20240128/ourmid/pngtree-pink-heart-png-png-image_11502182.png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-image: url('./img/1.png'); /* Replace with the actual path to your image */
+            background-size: cover;
+            background-position: center;
+            font-family: "Poppins", sans-serif; /* Added cursive font */
+            color: #333; /* Default text color */
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            color: #555; /* darker color for "Hey there!" */
+        }
+        h2{
+          font-size: 1.5em;
+          margin-bottom: 20px;
+          color: #555;
+        }
+
+        .custom-button {
+            padding: 12px 24px;
+            font-size: 25px;
+            cursor: pointer;
+            background-color: transparent; /* Make the background transparent */
+            border: 2px solid #000000; /* Add a border */
+            border-radius: 5px; /* Rounded corners */
+            transition: background-color 0.3s ease; /* Smooth transition */
+            font-family: "Poppins", sans-serif; /* Use the cursive font */
+            color: #000000; /* Text color for the button */
+            margin-top: 50px; /* Added margin above the button */
+        }
+
+        .custom-button:hover {
+            background-color: rgba(255, 255, 255, 0.3); /* Slight background on hover for better feedback*/
+            border-color: #555454; /* Slightly lighter border on hover */
+            color: #2b9437; /* change text color on hover */
+
+        }
+        .login-container {
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            text-align: center;
+            margin-left: 200px; /* Add left margin to move it to the right */
+        }
+
+        .login-container h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        .login-container input[type="text"],
+        .login-container input[type="password"] {
+            padding: 10px;
+            margin: 10px 0;
+            width: 200px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .login-container button {
+            padding: 10px 20px;
+            background-color: #4CAF50; /* Green */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+            margin-top: 10px;
+        }
+
+        .login-container button:hover {
+            background-color: #367c39; /* Darker green */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button id="loginButton" button class="custom-button">Click Me!</button>
+    </div>
+
+    <script>
+        const loginButton = document.getElementById('loginButton');
+
+        loginButton.addEventListener('click', () => {
+            window.location.href = 'login.html'; // Redirect to login.html
+        });
+    </script>
+</body>
+</html>
